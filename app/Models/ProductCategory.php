@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Eloquent as Model;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @package App\Models
  * @version June 21, 2022, 9:03 pm UTC
  *
- * @property integer $name
+ * @property string $name
  */
 class ProductCategory extends Model
 {
@@ -19,7 +19,7 @@ class ProductCategory extends Model
 
 
     public $table = 'product_categories';
-    
+
 
     protected $dates = ['deleted_at'];
 
@@ -36,7 +36,7 @@ class ProductCategory extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'name' => 'integer'
+        'name' => 'string'
     ];
 
     /**
@@ -48,5 +48,5 @@ class ProductCategory extends Model
         'name' => 'required|min:3|max:155'
     ];
 
-    
+
 }

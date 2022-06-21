@@ -11,4 +11,9 @@
         <p>Customers</p>
     </a>
 </li>
-
+<li class="nav-item {{ Request::is('productCategories*') ? 'active' : '' }}">
+    <a href="{{ route('productCategories.index') }}" class="nav-link {{ Request::is(route('productCategories.index')) ? 'active' : '' }}">
+        <i class="fa fa-edit"></i>
+        <p>Product Categories</p>
+    </a>
+</li>

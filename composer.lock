@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fceb30e18915d0a7be4c5065fdbc42d8",
+    "content-hash": "09d6a97c129945d87491801a49438af5",
     "packages": [
         {
             "name": "brick/math",
@@ -1296,6 +1296,70 @@
                 }
             ],
             "time": "2022-02-25T05:34:45+00:00"
+        },
+        {
+            "name": "infyomlabs/generator-builder",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/InfyOmLabs/generator-builder.git",
+                "reference": "7ae76cd061caff7ba31f9ec871626cbfcd040251"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/InfyOmLabs/generator-builder/zipball/7ae76cd061caff7ba31f9ec871626cbfcd040251",
+                "reference": "7ae76cd061caff7ba31f9ec871626cbfcd040251",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": ">=5.0",
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "\\InfyOm\\GeneratorBuilder\\GeneratorBuilderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "InfyOm\\GeneratorBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mitul Golakiya",
+                    "email": "me@mitul.me"
+                }
+            ],
+            "description": "InfyOm Laravel Generator GUI Builder",
+            "keywords": [
+                "api",
+                "builder",
+                "crud",
+                "generator",
+                "gui",
+                "interface",
+                "laravel",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/InfyOmLabs/generator-builder/issues",
+                "source": "https://github.com/InfyOmLabs/generator-builder/tree/v1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/infyomlabs",
+                    "type": "opencollective"
+                }
+            ],
+            "time": "2022-02-22T06:28:37+00:00"
         },
         {
             "name": "infyomlabs/laravel-generator",

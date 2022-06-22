@@ -44,3 +44,6 @@ Route::resource('productCategories', App\Http\Controllers\ProductCategoryControl
 
 
 Route::resource('products', App\Http\Controllers\ProductController::class);
+
+
+Route::resource('sells', App\Http\Controllers\SellController::class);

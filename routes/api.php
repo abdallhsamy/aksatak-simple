@@ -26,3 +26,6 @@ Route::resource('product_categories', App\Http\Controllers\API\ProductCategoryAP
 
 
 Route::resource('products', App\Http\Controllers\API\ProductAPIController::class);
+
+
+Route::resource('sells', App\Http\Controllers\API\SellAPIController::class);

@@ -23,3 +23,10 @@
         <p>Products</p>
     </a>
 </li>
+<li class="nav-item {{ Request::is('sells*') ? 'active' : '' }}">
+    <a href="{{ route('sells.index') }}" class="nav-link {{ Request::is(route('sells.index')) ? 'active' : '' }}">
+        <i class="fa fa-edit"></i>
+        <p>Sells</p>
+    </a>
+</li>
+

@@ -17,3 +17,9 @@
         <p>Product Categories</p>
     </a>
 </li>
+<li class="nav-item {{ Request::is('products*') ? 'active' : '' }}">
+    <a href="{{ route('products.index') }}" class="nav-link {{ Request::is(route('products.index')) ? 'active' : '' }}">
+        <i class="fa fa-edit"></i>
+        <p>Products</p>
+    </a>
+</li>

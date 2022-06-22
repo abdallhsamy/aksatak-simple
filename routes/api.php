@@ -23,3 +23,6 @@ Route::resource('customers', App\Http\Controllers\API\CustomerAPIController::cla
 
 
 Route::resource('product_categories', App\Http\Controllers\API\ProductCategoryAPIController::class);
+
+
+Route::resource('products', App\Http\Controllers\API\ProductAPIController::class);

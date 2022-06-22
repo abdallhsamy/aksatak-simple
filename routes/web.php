@@ -47,3 +47,6 @@ Route::resource('products', App\Http\Controllers\ProductController::class);
 
 
 Route::resource('sells', App\Http\Controllers\SellController::class);
+
+
+Route::resource('installments', App\Http\Controllers\InstallmentController::class);

@@ -29,4 +29,9 @@
         <p>Sells</p>
     </a>
 </li>
-
+<li class="nav-item {{ Request::is('installments*') ? 'active' : '' }}">
+    <a href="{{ route('installments.index') }}" class="nav-link {{ Request::is(route('installments.index')) ? 'active' : '' }}">
+        <i class="fa fa-edit"></i>
+        <p>Installments</p>
+    </a>
+</li>

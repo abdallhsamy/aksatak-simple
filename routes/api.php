@@ -29,3 +29,6 @@ Route::resource('products', App\Http\Controllers\API\ProductAPIController::class
 
 
 Route::resource('sells', App\Http\Controllers\API\SellAPIController::class);
+
+
+Route::resource('installments', App\Http\Controllers\API\InstallmentAPIController::class);

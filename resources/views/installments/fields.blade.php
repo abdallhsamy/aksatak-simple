@@ -1,6 +1,6 @@
 <!-- Sell Id Field -->
 
-@if(Request::is(route('customers.create')))
+@if(Route::currentRouteName() == 'installments.create')
 <div class="form-group col-sm-6">
     {!! Form::label('sell_id', __('models/installments.fields.sell_id').':') !!}
     {!! Form::select('sell_id', $sells, null, ['class' => 'form-control custom-select']) !!}

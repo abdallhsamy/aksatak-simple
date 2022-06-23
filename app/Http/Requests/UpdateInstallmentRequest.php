@@ -24,8 +24,10 @@ class UpdateInstallmentRequest extends FormRequest
      */
     public function rules()
     {
-        $rules = Installment::$rules;
-        
-        return $rules;
+        return [
+//            'sell_id' => 'required',
+            'date' => 'required',
+            'amount' => 'required'
+        ];
     }
 }
